@@ -1,12 +1,7 @@
-// JavaScript
-const getStartedButton = document.querySelector('.btn-get-started');
-const viewExploitsButton = document.querySelector('.btn-view-exploits');
-const domain = 'https://yourdomain.com'; // Replace with your domain
-
-getStartedButton.addEventListener('click', () => {
-  window.location.href = `${domain}/get-started`;
+document.getElementById("get-exploits").addEventListener("click", function() {
+	window.location.href = "YOUR_URL_HERE"; /* Set your URL here */
 });
 
-viewExploitsButton.addEventListener('click', () => {
-  window.location.href = `${domain}/exploits`;
+document.getElementById("get-started").addEventListener("click", function() {
+		window.location.href = "YOUR_URL_HERE"; /* Set your URL here */
 });
