@@ -9,7 +9,8 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Send a request to the backend to verify the credentials
-    fetch('/login', {
+    const url = 'YOUR_URL_HERE'; // Replace with your backend URL
+    fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -35,7 +36,8 @@ function register() {
     const password = document.getElementById('password').value;
 
     // Send a request to the backend to create a new user
-    fetch('/register', {
+    const url = 'YOUR_URL_HERE'; // Replace with your backend URL
+    fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
