@@ -1,13 +1,12 @@
-// Add event listeners to the buttons
-const getStartedButton = document.getElementById('get-started-button');
-const viewExploitsButton = document.getElementById('view-exploits-button');
+// JavaScript
+const getStartedButton = document.querySelector('.btn-get-started');
+const viewExploitsButton = document.querySelector('.btn-view-exploits');
+const domain = 'https://yourdomain.com'; // Replace with your domain
 
 getStartedButton.addEventListener('click', () => {
-    // Replace with your URL
-    window.location.href = 'https://prakit1234.github.io/UTPALX/';
+  window.location.href = `${domain}/get-started`;
 });
 
 viewExploitsButton.addEventListener('click', () => {
-    // Replace with your URL
-    window.location.href = 'https://example.com/exploits';
+  window.location.href = `${domain}/exploits`;
 });
