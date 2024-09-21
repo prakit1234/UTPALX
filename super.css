@@ -1,117 +1,53 @@
-/* Global Styles */
+/* CSS */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #333;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  background-color: #000; /* Black background */
+  font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #444;
-    border-bottom: 1px solid #555;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    background-image: url('logo.png');
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.title {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Container Styles */
 .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #333; /* Dark gray background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Description Styles */
-.description {
-    margin-bottom: 20px;
+h1 {
+  color: #fff; /* White text */
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.description h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+p {
+  color: #ccc; /* Light gray text */
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.description p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.btn-get-started, .btn-view-exploits {
+  background-color: #444; /* Dark gray button background */
+  color: #fff; /* White button text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-/* Legal Info Styles */
-.legal-info {
-    margin-bottom: 20px;
+.btn-get-started:hover, .btn-view-exploits:hover {
+  background-color: #555; /* Darker gray button background on hover */
 }
 
-.legal-info h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* Add some subtle animations to enhance the user experience */
+.container {
+  animation: fade-in 0.5s;
 }
 
-.legal-info p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-/* Buttons Styles */
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#get-started-button, #view-exploits-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #555;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    animation: pulse 2s infinite;
-}
-
-#get-started-button:hover, #view-exploits-button:hover {
-    background-color: #666;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
