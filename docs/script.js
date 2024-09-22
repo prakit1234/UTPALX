@@ -5,12 +5,12 @@ const countdownDisplay = document.getElementById('countdown');
 // Add event listeners to the buttons
 document.getElementById('login-btn').addEventListener('click', (event) => {
     event.preventDefault(); // Prevent form submission
-    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/login.html'); // Update this URL
+    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/index.html'); // Update this URL
 });
 
 document.getElementById('register-btn').addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default button action
-    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/register.html'); // Update this URL
+    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/index.html'); // Update this URL
 });
 
 // Function to handle redirect with countdown
