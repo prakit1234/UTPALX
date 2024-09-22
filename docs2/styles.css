@@ -1,0 +1,190 @@
+/* Google Font: Montserrat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Bold font */
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Yellow text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size as needed */
+    margin-bottom: 20px;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.top-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.top-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade in for title */
+}
+
+/* Search Bar Styles */
+.search-container {
+    margin-bottom: 40px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#search-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+#search-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Main content styling */
+main {
+    margin-top: 100px; /* Space below the header */
+    margin-bottom: 50px; /* Space above the footer */
+}
+
+/* Executor list container */
+.executors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Executor box */
+.executor-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start lower */
+    animation: slideUp 0.5s forwards; /* Slide up effect */
+}
+
+/* Delay each executor box's animation */
+.executor-box:nth-child(1) { animation-delay: 0.1s; }
+.executor-box:nth-child(2) { animation-delay: 0.2s; }
+.executor-box:nth-child(3) { animation-delay: 0.3s; }
+.executor-box:nth-child(4) { animation-delay: 0.4s; }
+.executor-box:nth-child(5) { animation-delay: 0.5s; }
+.executor-box:nth-child(6) { animation-delay: 0.6s; }
+.executor-box:nth-child(7) { animation-delay: 0.7s; }
+
+.executor-box h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+.executor-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+.download-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Animation Definitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #FFD700;
+}
+
+/* Light Follow Mouse Effect */
+.light {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.6);
+    width: 50px; /* Size of the light */
+    height: 50px; /* Size of the light */
+    transition: background 0.3s;
+    mix-blend-mode: difference; /* Makes it blend with the background */
+}
