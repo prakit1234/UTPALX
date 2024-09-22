@@ -20,13 +20,15 @@
             <div class="login-register">
                 <form id="login-form">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username"><br><br>
+                    <input type="text" id="username" name="username" required><br>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password"><br><br>
-                    <button id="login-btn">Login</button>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit" id="login-btn">Login</button>
                 </form>
                 <button id="register-btn">Register</button>
             </div>
+            <p id="countdown" style="display: none;"></p>
+            <img id="loading-gif" src="https://c.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" alt="Loading" style="display: none;">
         </div>
     </div>
 
