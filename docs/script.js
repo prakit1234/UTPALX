@@ -5,11 +5,12 @@ const countdownDisplay = document.getElementById('countdown');
 // Add event listeners to the buttons
 document.getElementById('login-btn').addEventListener('click', (event) => {
     event.preventDefault(); // Prevent form submission
-    redirectWithCountdown('http://127.0.0.1:5500/MAIN/login.html');
+    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/login.html'); // Update this URL
 });
 
-document.getElementById('register-btn').addEventListener('click', () => {
-    redirectWithCountdown('http://127.0.0.1:5500/MAIN/register.html');
+document.getElementById('register-btn').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default button action
+    redirectWithCountdown('https://prakit1234.github.io/UTPALX/docs2/register.html'); // Update this URL
 });
 
 // Function to handle redirect with countdown
@@ -20,9 +21,11 @@ function redirectWithCountdown(redirectUrl) {
 
     let countdown = 10; // Countdown duration in seconds
 
+    countdownDisplay.textContent = `Redirecting in ${countdown} seconds...`; // Initial message
+
     const countdownInterval = setInterval(() => {
-        countdownDisplay.textContent = `Redirecting in ${countdown} seconds...`;
         countdown--;
+        countdownDisplay.textContent = `Redirecting in ${countdown} seconds...`;
 
         if (countdown < 0) {
             clearInterval(countdownInterval);
